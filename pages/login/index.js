@@ -15,8 +15,8 @@ const LoginScreen = () => {
   const { setUserInfo, setAuthentication } = useContext(AppContext);
   const formik = useFormik({
     initialValues: {
-      email: "emre.ramazanoglu@akinon.com",
-      password: "#Fuxsistem?72",
+      email: "",
+      password: "",
     },
     validationSchema: Yup.object({
       email: Yup.string().email("Invalid email address").required("Required"),
